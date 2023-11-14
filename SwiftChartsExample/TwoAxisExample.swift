@@ -2,7 +2,7 @@ import Charts
 import SwiftUI
 import WeatherKit
 
-struct InteractiveLollipopChartMinimal: View {
+struct TwoAxisExample: View {
 
     var body: some View {
         Chart {
@@ -48,12 +48,14 @@ struct InteractiveLollipopChartMinimal: View {
                 AxisValueLabel("\(axis.index * 4)", centered: false)
             }
         }
+        .chartYAxisLabel("(円)", position: .topLeading)
+        .chartYAxisLabel("(ドル)", position: .topTrailing)
     }
 }
 
 
 #Preview {
-    InteractiveLollipopChartMinimal()
+    TwoAxisExample()
 }
 
 struct HourWeatherStruct {

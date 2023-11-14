@@ -11,7 +11,9 @@
 		40F99EC02B020773006F807E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99EBF2B020773006F807E /* ContentView.swift */; };
 		40F99EC22B020775006F807E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F99EC12B020775006F807E /* Assets.xcassets */; };
 		40F99EC52B020775006F807E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F99EC42B020775006F807E /* Preview Assets.xcassets */; };
-		40F99ECC2B021D84006F807E /* ExampleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECB2B021D84006F807E /* ExampleChart.swift */; };
+		40F99ECC2B021D84006F807E /* TwoAxisExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECB2B021D84006F807E /* TwoAxisExample.swift */; };
+		40F99ECE2B02FB64006F807E /* HorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */; };
+		40F99ED02B03630C006F807E /* YAxisTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECF2B03630C006F807E /* YAxisTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,9 @@
 		40F99EBF2B020773006F807E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40F99EC12B020775006F807E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F99EC42B020775006F807E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		40F99ECB2B021D84006F807E /* ExampleChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleChart.swift; sourceTree = "<group>"; };
+		40F99ECB2B021D84006F807E /* TwoAxisExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoAxisExample.swift; sourceTree = "<group>"; };
+		40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChart.swift; sourceTree = "<group>"; };
+		40F99ECF2B03630C006F807E /* YAxisTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 				40F99EBF2B020773006F807E /* ContentView.swift */,
 				40F99EC12B020775006F807E /* Assets.xcassets */,
 				40F99EC32B020775006F807E /* Preview Content */,
-				40F99ECB2B021D84006F807E /* ExampleChart.swift */,
+				40F99ECB2B021D84006F807E /* TwoAxisExample.swift */,
+				40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */,
+				40F99ECF2B03630C006F807E /* YAxisTest.swift */,
 			);
 			path = SwiftChartsExample;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F99ECE2B02FB64006F807E /* HorizontalBarChart.swift in Sources */,
 				40F99EC02B020773006F807E /* ContentView.swift in Sources */,
-				40F99ECC2B021D84006F807E /* ExampleChart.swift in Sources */,
+				40F99ECC2B021D84006F807E /* TwoAxisExample.swift in Sources */,
+				40F99ED02B03630C006F807E /* YAxisTest.swift in Sources */,
 				40F99EBE2B020773006F807E /* SwiftChartsExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
