@@ -99,7 +99,7 @@ enum YAxisUtil {
             }
 
             let graphMin = graphMax - interval * (Double(lineCount) - 1)
-            if safeMin > graphMin {
+            if safeMin >= graphMin {
                 break
             }
             proceedUnitIndex()
