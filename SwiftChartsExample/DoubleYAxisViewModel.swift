@@ -53,8 +53,8 @@ class DoubleYAxisViewModel: ObservableObject {
         return YAxisUtil.calcYAxis(
             min: 0,
             max: max * 1.1, 
-            lineCount: 6,
-            minSpan: 10,
+            divideCount: 5,
+            defaultSpan: 10,
             forcePositive: true
         )
     }
@@ -67,8 +67,8 @@ class DoubleYAxisViewModel: ObservableObject {
         return YAxisUtil.calcYAxis(
             min: min,
             max: max + (max - min) * 0.1,
-            lineCount: 6,
-            minSpan: 10
+            divideCount: 5,
+            defaultSpan: 10
         )
     }
 }

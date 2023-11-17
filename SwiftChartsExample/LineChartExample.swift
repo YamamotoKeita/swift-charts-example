@@ -44,8 +44,8 @@ struct LineChartExample: View {
         return YAxisUtil.calcYAxis(
             min: min,
             max: marginedMax,
-            lineCount: 6,
-            minSpan: 10
+            divideCount: 6,
+            defaultSpan: 10
         )
     }
 }
