@@ -1,8 +1,19 @@
 import SwiftUI
 
 class DoubleYAxisViewModel: ObservableObject {
-    @Published var barSource: [Double] = [190000, 65000, 80000, 65000]
-    @Published var lineSource: [Double] = [-10, 8, 3, 5]
+    static let initialBarSource: [Double] = [190000, 65000, 80000, 65000]
+    static let initialLineSource: [Double] = [-10, 8, 3, 5]
+
+    @Published var sliderValue: Double = 1 {
+        didSet {
+            barSource = Self.initialBarSource.map { $0 * sliderValue }
+            lineSource = Self.initialLineSource.map { $0 * sliderValue }
+            calculate()
+        }
+    }
+
+    @Published var barSource: [Double] = initialBarSource
+    @Published var lineSource: [Double] = initialLineSource
 
     var barData: [Double] { barSource }
     var lineData: [Double] = []
