@@ -54,7 +54,8 @@ class DoubleYAxisViewModel: ObservableObject {
             min: 0,
             max: max * 1.1, 
             lineCount: 6,
-            minSpan: 10
+            minSpan: 10,
+            forcePositive: true
         )
     }
 

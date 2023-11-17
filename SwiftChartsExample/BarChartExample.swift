@@ -3,6 +3,7 @@ import Charts
 
 struct BarChartExample: View {
     let barData: [Double] = [14195853, 4856476, 5977201, 4856476]
+    @State var yAxis: [Double] = []
 
     var body: some View {
         Chart {
@@ -15,16 +16,19 @@ struct BarChartExample: View {
 
         }
         .chartYAxis {
-            AxisMarks(position: .leading, values: yAxis()) { axis in
-                let value = yAxis()[axis.index]
+            AxisMarks(position: .leading, values: yAxis) { axis in
+                let value = yAxis[axis.index]
                 AxisGridLine()
                 AxisValueLabel("\(Int(value / 10000))", centered: false)
             }
         }
         .frame(height: 300)
+        .onAppear {
+            yAxis = calcYAxis()
+        }
     }
 
-    func yAxis() -> [Double] {
+    func calcYAxis() -> [Double] {
         guard let max = barData.max() else {
             return []
         }
@@ -33,7 +37,8 @@ struct BarChartExample: View {
             min: 0,
             max: max * 1.1,
             lineCount: 6,
-            minSpan: 10
+            minSpan: 10,
+            forcePositive: true
         )
     }
 }

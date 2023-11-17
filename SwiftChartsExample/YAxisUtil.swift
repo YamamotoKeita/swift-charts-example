@@ -3,7 +3,13 @@ import Foundation
 enum YAxisUtil {
     static private let units: [Double] = [10, 12, 15, 20, 25, 30, 40, 50, 60, 80]
 
-    static func calcYAxis(min: Double, max: Double, lineCount: Int, minSpan: Double) -> [Double] {
+    static func calcYAxis(
+        min: Double,
+        max: Double,
+        lineCount: Int,
+        minSpan: Double,
+        forcePositive: Bool = false
+    ) -> [Double] {
         var safeMin = min
         var safeMax = max
         if min == max {
@@ -28,7 +34,8 @@ enum YAxisUtil {
         }
 
         var interval: Double = 0
-        var graphMax: Double = 0
+        var graphMin: Double = 0
+
         while true {
             let unit = units[unitIndex] * unitScale
             if unit < prefix {
@@ -39,22 +46,29 @@ enum YAxisUtil {
             interval = unit * suffix
             let remainder = safeMax.truncatingRemainder(dividingBy: interval)
 
-            graphMax = safeMax - remainder
+            var graphMax = safeMax - remainder
             if 0 < remainder {
                 graphMax += interval
             }
 
-            let graphMin = graphMax - interval * (Double(lineCount) - 1)
-            if safeMin >= graphMin {
+            graphMin = graphMax - interval * (Double(lineCount) - 1)
+
+            if forcePositive {
+                while graphMin < 0 {
+                    graphMin += interval
+                }
+                graphMax = graphMin + interval * (Double(lineCount) - 1)
+            }
+
+            if graphMin <= safeMin && safeMax <= graphMax {
                 break
             }
             proceedUnitIndex()
         }
 
         return (0..<lineCount)
-            .reversed()
             .map {
-                graphMax - (Double($0) * interval)
+                graphMin + (Double($0) * interval)
             }
     }
 }
