@@ -15,8 +15,8 @@
 		40F99EC22B020775006F807E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F99EC12B020775006F807E /* Assets.xcassets */; };
 		40F99EC52B020775006F807E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F99EC42B020775006F807E /* Preview Assets.xcassets */; };
 		40F99ECC2B021D84006F807E /* TwoAxisExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECB2B021D84006F807E /* TwoAxisExample.swift */; };
-		40F99ECE2B02FB64006F807E /* HorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */; };
-		40F99ED02B03630C006F807E /* YAxisTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECF2B03630C006F807E /* YAxisTest.swift */; };
+		40F99ECE2B02FB64006F807E /* BarChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECD2B02FB64006F807E /* BarChartExample.swift */; };
+		40F99ED02B03630C006F807E /* LineChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99ECF2B03630C006F807E /* LineChartExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		40F99EC12B020775006F807E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F99EC42B020775006F807E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40F99ECB2B021D84006F807E /* TwoAxisExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoAxisExample.swift; sourceTree = "<group>"; };
-		40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChart.swift; sourceTree = "<group>"; };
-		40F99ECF2B03630C006F807E /* YAxisTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisTest.swift; sourceTree = "<group>"; };
+		40F99ECD2B02FB64006F807E /* BarChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartExample.swift; sourceTree = "<group>"; };
+		40F99ECF2B03630C006F807E /* LineChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				40F99EC12B020775006F807E /* Assets.xcassets */,
 				40F99EC32B020775006F807E /* Preview Content */,
 				40F99ECB2B021D84006F807E /* TwoAxisExample.swift */,
-				40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */,
-				40F99ECF2B03630C006F807E /* YAxisTest.swift */,
+				40F99ECD2B02FB64006F807E /* BarChartExample.swift */,
+				40F99ECF2B03630C006F807E /* LineChartExample.swift */,
 				4041962F2B072D3E00679E49 /* DoubleYAxis.swift */,
 				404196312B073C9C00679E49 /* DoubleYAxisViewModel.swift */,
 				404196332B07420900679E49 /* YAxisUtil.swift */,
@@ -155,11 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F99ECE2B02FB64006F807E /* HorizontalBarChart.swift in Sources */,
+				40F99ECE2B02FB64006F807E /* BarChartExample.swift in Sources */,
 				40F99EC02B020773006F807E /* ContentView.swift in Sources */,
 				404196322B073C9D00679E49 /* DoubleYAxisViewModel.swift in Sources */,
 				40F99ECC2B021D84006F807E /* TwoAxisExample.swift in Sources */,
-				40F99ED02B03630C006F807E /* YAxisTest.swift in Sources */,
+				40F99ED02B03630C006F807E /* LineChartExample.swift in Sources */,
 				40F99EBE2B020773006F807E /* SwiftChartsExampleApp.swift in Sources */,
 				404196342B07420900679E49 /* YAxisUtil.swift in Sources */,
 				404196302B072D3E00679E49 /* DoubleYAxis.swift in Sources */,

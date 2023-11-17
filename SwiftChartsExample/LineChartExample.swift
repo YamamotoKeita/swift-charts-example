@@ -1,7 +1,7 @@
 import SwiftUI
 import Charts
 
-struct YAxisTest: View {
+struct LineChartExample: View {
     @State private var sliderValue: Double = 1
 
     let baseData: [Double] = [-10, 20]
@@ -51,5 +51,5 @@ struct YAxisTest: View {
 }
 
 #Preview {
-    YAxisTest()
+    LineChartExample()
 }
