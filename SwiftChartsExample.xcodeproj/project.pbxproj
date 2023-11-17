@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		404196302B072D3E00679E49 /* DoubleYAxisTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041962F2B072D3E00679E49 /* DoubleYAxisTest.swift */; };
 		40F99EBE2B020773006F807E /* SwiftChartsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99EBD2B020773006F807E /* SwiftChartsExampleApp.swift */; };
 		40F99EC02B020773006F807E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F99EBF2B020773006F807E /* ContentView.swift */; };
 		40F99EC22B020775006F807E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F99EC12B020775006F807E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4041962F2B072D3E00679E49 /* DoubleYAxisTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleYAxisTest.swift; sourceTree = "<group>"; };
 		40F99EBA2B020773006F807E /* SwiftChartsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChartsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F99EBD2B020773006F807E /* SwiftChartsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsExampleApp.swift; sourceTree = "<group>"; };
 		40F99EBF2B020773006F807E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				40F99ECB2B021D84006F807E /* TwoAxisExample.swift */,
 				40F99ECD2B02FB64006F807E /* HorizontalBarChart.swift */,
 				40F99ECF2B03630C006F807E /* YAxisTest.swift */,
+				4041962F2B072D3E00679E49 /* DoubleYAxisTest.swift */,
 			);
 			path = SwiftChartsExample;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				40F99ECC2B021D84006F807E /* TwoAxisExample.swift in Sources */,
 				40F99ED02B03630C006F807E /* YAxisTest.swift in Sources */,
 				40F99EBE2B020773006F807E /* SwiftChartsExampleApp.swift in Sources */,
+				404196302B072D3E00679E49 /* DoubleYAxisTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
