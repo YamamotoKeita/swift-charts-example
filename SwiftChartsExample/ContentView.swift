@@ -16,6 +16,10 @@ struct ContentView: View {
         [7, 10, 18]
     ]
 
+    func test() {
+        let array = [1, 2, 3]
+    }
+
     var body: some View {
         VStack {
             Text(selectedX ?? "")

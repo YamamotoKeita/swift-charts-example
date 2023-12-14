@@ -4,7 +4,7 @@ import SwiftUI
 struct SwiftChartsExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            BarChartExample()
+            AxisFontExample()
         }
     }
 }
